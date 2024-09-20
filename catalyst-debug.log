@@ -1,0 +1,294 @@
+[debug] [2024-09-14T09:13:09.351Z] : 
+[debug] [2024-09-14T09:13:09.354Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:13:09.354Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst deploy
+[debug] [2024-09-14T09:13:09.355Z] : CLI Version:  1.17.6
+[debug] [2024-09-14T09:13:09.355Z] : Platform:     linux
+[debug] [2024-09-14T09:13:09.356Z] : Node Version: v20.17.0
+[debug] [2024-09-14T09:13:09.356Z] : Time:         Sat Sep 14 2024 14:43:09 GMT+0530 (India Standard Time)
+[debug] [2024-09-14T09:13:09.357Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:13:09.357Z] : 
+[debug] [2024-09-14T09:13:09.990Z] : > authorizing via signed-in user option
+[debug] [2024-09-14T09:13:09.991Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2024-09-14T09:13:10.012Z] : > refreshing access token <
+[debug] [2024-09-14T09:13:10.015Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-09-14T09:13:52.853Z] : 
+[debug] [2024-09-14T09:13:52.857Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:13:52.857Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2024-09-14T09:13:52.858Z] : CLI Version:  1.17.6
+[debug] [2024-09-14T09:13:52.859Z] : Platform:     linux
+[debug] [2024-09-14T09:13:52.860Z] : Node Version: v20.17.0
+[debug] [2024-09-14T09:13:52.860Z] : Time:         Sat Sep 14 2024 14:43:52 GMT+0530 (India Standard Time)
+[debug] [2024-09-14T09:13:52.861Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:13:52.861Z] : 
+[debug] [2024-09-14T09:13:53.649Z] : > authorizing via signed-in user option
+[debug] [2024-09-14T09:13:53.650Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-09-14T09:13:53.667Z] : > refreshing access token <
+[debug] [2024-09-14T09:13:53.669Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[warn] [2024-09-14T09:13:53.989Z] : ⚠ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-09-14T09:13:53.990Z] : API Error while firing request : 
+
+[debug] [2024-09-14T09:13:53.990Z] : >>>> RETRYING
+
+[warn] [2024-09-14T09:13:54.251Z] : ⚠ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-09-14T09:13:54.252Z] : API Error while firing request : 
+
+[debug] [2024-09-14T09:13:54.252Z] : >>>> RETRYING
+
+[warn] [2024-09-14T09:13:54.510Z] : ⚠ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[debug] [2024-09-14T09:13:54.511Z] : API Error while firing request : 
+
+[debug] [2024-09-14T09:13:54.511Z] : >>>> RETRYING
+
+[warn] [2024-09-14T09:13:54.770Z] : ⚠ ETIMEDOUT has occured while communicating remote server. Kindly be patient while the cli retries this request.
+[error] [2024-09-14T09:13:54.783Z] : ✖ API Error after retrying : 
+[debug] [2024-09-14T09:13:54.783Z] : Error Stack: CatalystError: API Error after retrying : 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:162:23)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:27:12)
+    at API._retry (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:160:16)
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:205:56)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-09-14T09:13:54.783Z] : Original Error: AggregateError [ETIMEDOUT]: 
+    at internalConnectMultiple (node:net:1118:18)
+    at internalConnectMultiple (node:net:1186:5)
+    at Timeout.internalConnectMultipleTimeout (node:net:1712:5)
+    at listOnTimeout (node:internal/timers:583:11)
+    at process.processTimers (node:internal/timers:519:7)
+[debug] [2024-09-14T09:13:54.784Z] : Error Status: 500
+[info] [2024-09-14T09:13:54.784Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-09-14T09:13:54.785Z] : ✖ API Error: 
+[debug] [2024-09-14T09:13:54.785Z] : Error Stack: CatalystError: API Error: 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:214:32)
+    at Generator.throw (<anonymous>)
+    at rejected (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-09-14T09:13:54.785Z] : Original Error: AggregateError [ETIMEDOUT]: 
+    at internalConnectMultiple (node:net:1118:18)
+    at internalConnectMultiple (node:net:1186:5)
+    at Timeout.internalConnectMultipleTimeout (node:net:1712:5)
+    at listOnTimeout (node:internal/timers:583:11)
+    at process.processTimers (node:internal/timers:519:7)
+[debug] [2024-09-14T09:13:54.785Z] : Error Status: 500
+[info] [2024-09-14T09:13:54.786Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-09-14T09:13:54.786Z] : ✖ API Error: 
+[debug] [2024-09-14T09:13:54.787Z] : Error Stack: CatalystError: API Error: 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:214:32)
+    at Generator.throw (<anonymous>)
+    at rejected (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:29:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-09-14T09:13:54.787Z] : Original Error: AggregateError [ETIMEDOUT]: 
+    at internalConnectMultiple (node:net:1118:18)
+    at internalConnectMultiple (node:net:1186:5)
+    at Timeout.internalConnectMultipleTimeout (node:net:1712:5)
+    at listOnTimeout (node:internal/timers:583:11)
+    at process.processTimers (node:internal/timers:519:7)
+[debug] [2024-09-14T09:13:54.787Z] : Error Status: 500
+[info] [2024-09-14T09:13:54.787Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-09-14T09:13:54.800Z] : ✖ Error when refreshing the access token
+[debug] [2024-09-14T09:13:54.800Z] : Error Stack: CatalystError: Error when refreshing the access token
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/credential.js:139:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-09-14T09:13:54.801Z] : Original Error: CatalystError: API Error after retrying : 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:162:23)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:27:12)
+    at API._retry (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:160:16)
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:205:56)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+[debug] [2024-09-14T09:13:54.801Z] : Error Status: 500
+[info] [2024-09-14T09:13:54.802Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2024-09-14T09:13:54.803Z] : EXEC ENDED with event: Error (Unexpected), message: Error when refreshing the access token
+[debug] [2024-09-14T09:13:54.803Z] : TOTAL DURATION OF COMMAND EXEC : 1143
+[debug] [2024-09-14T09:13:54.805Z] : Unable to initialise the log API
+[debug] [2024-09-14T09:14:11.034Z] : 
+[debug] [2024-09-14T09:14:11.038Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:14:11.039Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2024-09-14T09:14:11.039Z] : CLI Version:  1.17.6
+[debug] [2024-09-14T09:14:11.040Z] : Platform:     linux
+[debug] [2024-09-14T09:14:11.040Z] : Node Version: v20.17.0
+[debug] [2024-09-14T09:14:11.041Z] : Time:         Sat Sep 14 2024 14:44:11 GMT+0530 (India Standard Time)
+[debug] [2024-09-14T09:14:11.041Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:14:11.042Z] : 
+[debug] [2024-09-14T09:14:11.805Z] : > authorizing via signed-in user option
+[debug] [2024-09-14T09:14:11.807Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-09-14T09:14:11.837Z] : > refreshing access token <
+[debug] [2024-09-14T09:14:11.842Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[error] [2024-09-14T09:14:11.990Z] : ✖ API Error: 
+[debug] [2024-09-14T09:14:11.992Z] : Error Stack: CatalystError: API Error: 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:214:32)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:27:12)
+    at Request._callback (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:194:67)
+    at self.callback (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (node:events:519:28)
+[debug] [2024-09-14T09:14:11.992Z] : Original Error: AggregateError [ENETUNREACH]: 
+    at internalConnectMultiple (node:net:1118:18)
+    at internalConnectMultiple (node:net:1186:5)
+    at afterConnectMultiple (node:net:1685:7)
+[debug] [2024-09-14T09:14:11.992Z] : Error Status: 500
+[info] [2024-09-14T09:14:11.993Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[error] [2024-09-14T09:14:12.002Z] : ✖ Error when refreshing the access token
+[debug] [2024-09-14T09:14:12.002Z] : Error Stack: CatalystError: Error when refreshing the access token
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/credential.js:139:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[debug] [2024-09-14T09:14:12.002Z] : Original Error: CatalystError: API Error: 
+    at API.<anonymous> (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:214:32)
+    at Generator.next (<anonymous>)
+    at /usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:31:71
+    at new Promise (<anonymous>)
+    at __awaiter (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:27:12)
+    at Request._callback (/usr/local/lib/node_modules/zcatalyst-cli/lib/internal/api.js:194:67)
+    at self.callback (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:519:28)
+    at Request.onRequestError (/usr/local/lib/node_modules/zcatalyst-cli/node_modules/request/request.js:877:8)
+    at ClientRequest.emit (node:events:519:28)
+[debug] [2024-09-14T09:14:12.002Z] : Error Status: 500
+[info] [2024-09-14T09:14:12.003Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2024-09-14T09:14:12.005Z] : EXEC ENDED with event: Error (Unexpected), message: Error when refreshing the access token
+[debug] [2024-09-14T09:14:12.005Z] : TOTAL DURATION OF COMMAND EXEC : 215
+[debug] [2024-09-14T09:14:12.007Z] : Unable to initialise the log API
+[debug] [2024-09-14T09:14:19.583Z] : 
+[debug] [2024-09-14T09:14:19.587Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:14:19.588Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2024-09-14T09:14:19.588Z] : CLI Version:  1.17.6
+[debug] [2024-09-14T09:14:19.589Z] : Platform:     linux
+[debug] [2024-09-14T09:14:19.590Z] : Node Version: v20.17.0
+[debug] [2024-09-14T09:14:19.591Z] : Time:         Sat Sep 14 2024 14:44:19 GMT+0530 (India Standard Time)
+[debug] [2024-09-14T09:14:19.591Z] : ----------------------------------------------------------------------
+[debug] [2024-09-14T09:14:19.592Z] : 
+[debug] [2024-09-14T09:14:20.444Z] : > authorizing via signed-in user option
+[debug] [2024-09-14T09:14:20.445Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-09-14T09:14:20.464Z] : > refreshing access token <
+[debug] [2024-09-14T09:14:20.466Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-09-14T09:14:20.911Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 14 Sep 2024 09:14:21 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=cc36c6f8a6790832246efd66c032e512; Path=/","iamcsr=c3400d30-d034-4e24-adbb-1d7d190e1279;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c3400d30-d034-4e24-adbb-1d7d190e1279;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-14T09:14:20.928Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9331000000011006 
+
+[debug] [2024-09-14T09:14:21.481Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 14 Sep 2024 09:14:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=a9b934cb-5ab6-45d8-8257-91c3a87f8a02;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a9b934cb-5ab6-45d8-8257-91c3a87f8a02;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-14T09:14:21.487Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9331000000011006/environment 
+
+[debug] [2024-09-14T09:14:21.624Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 14 Sep 2024 09:14:21 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=4f824ebf-50fb-4cfd-bb5d-ed91a8b6f4f1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4f824ebf-50fb-4cfd-bb5d-ed91a8b6f4f1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-14T09:14:21.948Z] : No basic functions to add
+[info] [2024-09-14T09:14:22.089Z] : 
+[info] [2024-09-14T09:14:22.089Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-09-14T09:14:22.091Z] : ℹ client[sampleApp]: http://localhost:3000/app/
+[info] [2024-09-14T09:14:22.092Z] : 
+[info] [2024-09-14T09:15:16.071Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:15:50.126Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:15:52.823Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:15:55.848Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:15:58.492Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:02.633Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:04.953Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:12.290Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:22.329Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:25.153Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:16:28.832Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-14T09:35:57.180Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:35:59.547Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:12.262Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:16.982Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:19.654Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:32.044Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:33.259Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:36.247Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:44.733Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T09:36:47.330Z] : Change(s) is detected in index.html of the Web-Client.
+[info] [2024-09-14T10:21:16.272Z] : Shutting down server
+[debug] [2024-09-14T10:21:16.327Z] : client server closed
+[info] [2024-09-14T10:21:16.360Z] : 
+[info] [2024-09-14T10:21:16.389Z] : ✔ Shutdown complete
+[debug] [2024-09-14T10:21:16.405Z] : NO ERRORS REGISTERED
+[debug] [2024-09-14T10:21:16.411Z] : EXEC ENDED with event: serve, message: success
+[debug] [2024-09-14T10:21:16.411Z] : TOTAL DURATION OF COMMAND EXEC : 4015965
+[debug] [2024-09-14T10:21:16.493Z] : > refreshing access token <
+[debug] [2024-09-14T10:21:16.494Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-09-20T13:12:06.292Z] : 
+[debug] [2024-09-20T13:12:06.294Z] : ----------------------------------------------------------------------
+[debug] [2024-09-20T13:12:06.294Z] : Command:      /usr/local/bin/node /usr/local/bin/catalyst serve
+[debug] [2024-09-20T13:12:06.295Z] : CLI Version:  1.17.6
+[debug] [2024-09-20T13:12:06.295Z] : Platform:     linux
+[debug] [2024-09-20T13:12:06.295Z] : Node Version: v20.17.0
+[debug] [2024-09-20T13:12:06.296Z] : Time:         Fri Sep 20 2024 18:42:06 GMT+0530 (India Standard Time)
+[debug] [2024-09-20T13:12:06.296Z] : ----------------------------------------------------------------------
+[debug] [2024-09-20T13:12:06.296Z] : 
+[debug] [2024-09-20T13:12:07.360Z] : > authorizing via signed-in user option
+[debug] [2024-09-20T13:12:07.360Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-09-20T13:12:07.378Z] : > refreshing access token <
+[debug] [2024-09-20T13:12:07.379Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-09-20T13:12:07.704Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 20 Sep 2024 13:12:07 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=13e67ac15bc4d3ece130966123511df7; Path=/; Secure; HttpOnly","iamcsr=bd40333b-8b19-412c-801c-5af064e534b5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bd40333b-8b19-412c-801c-5af064e534b5;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-20T13:12:07.736Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9331000000011006 
+
+[debug] [2024-09-20T13:12:07.994Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 20 Sep 2024 13:12:08 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=4f93097b-730b-431e-8185-d97cbbee8a72;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4f93097b-730b-431e-8185-d97cbbee8a72;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-20T13:12:07.996Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9331000000011006/environment 
+
+[debug] [2024-09-20T13:12:08.119Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 20 Sep 2024 13:12:08 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=dd1eff54-4e31-4c1d-b9de-0490cddd62ab;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=dd1eff54-4e31-4c1d-b9de-0490cddd62ab;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-09-20T13:12:08.359Z] : No basic functions to add
+[info] [2024-09-20T13:12:08.479Z] : 
+[info] [2024-09-20T13:12:08.480Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2024-09-20T13:12:08.481Z] : ℹ client[sampleApp]: http://localhost:3000/app/
+[info] [2024-09-20T13:12:08.481Z] : 
+[info] [2024-09-20T13:33:10.044Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T13:33:12.612Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:37:45.229Z] : Change(s) is detected in script.js of the Web-Client.
+[debug] [2024-09-20T17:37:45.757Z] : > refreshing access token <
+[debug] [2024-09-20T17:37:45.794Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+<request body omitted>
+
+[debug] [2024-09-20T17:37:46.820Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 20 Sep 2024 17:37:46 GMT","content-type":"application/json;charset=UTF-8","content-length":"1948","connection":"keep-alive","set-cookie":["zalb_6e73717622=dea4bb29906843a6fbdf3bd5c0e43d1d; Path=/; Secure; HttpOnly","iamcsr=cb74291e-6cde-4d63-ae5f-a65ffcd1463e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cb74291e-6cde-4d63-ae5f-a65ffcd1463e;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","content-security-policy":"script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.zohocdn.com https://*.zoho.com https://*.zoho.eu https://*.zoho.com.cn https://*.zoho.com.au https://*.zoho.jp https://*.zoho.uk https://*.zoho.sa https://*.zohocloud.ca; report-uri https://logsapi.zoho.in/csplog?service=accounts;","pragma":"no-cache","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2024-09-20T17:37:54.984Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:37:56.410Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:38:00.323Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:38:02.383Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:38:05.368Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:38:08.515Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:38:10.401Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:39:43.890Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:17.817Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:23.451Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:24.855Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:26.849Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:31.559Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:33.324Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:35.709Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:41.156Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:40:44.071Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:41:38.853Z] : Change(s) is detected in script.js of the Web-Client.
+[info] [2024-09-20T17:42:13.071Z] : Change(s) is detected in script.js of the Web-Client.
