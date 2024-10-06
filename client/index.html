@@ -40,15 +40,15 @@
         </div>
 
         <div class="main-content">
-            <section class="home section" id="home">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Pradeep R</span></h3>
                             <h3 class="my-profession">I' m a <span class="typing">web designer</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ratione rerum,
-                            eaque accusamus obcaecati porro....</p>
-                            <a href="#contact" class="btn hire-me">More About Me</a>
+                            <p>I’m a creative Web Designer, Graphic Designer, and Video Editor. With a passion for blending design and technology, I bring visually stunning and user-friendly experiences to life. 
+                                Let’s collaborate to create something exceptional for your brand or project.</p>
+                            <a href="#" class="btn">Download CV</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/hero.jpg" alt="">
@@ -68,10 +68,11 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>I'm Pradeep and <span>Web Developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum expedita pariatur necessitatibus 
-                                    quos tempora aliquam laborum mollitia vero repudiandae. Sed, consectetur explicabo, a odit eaque nesciunt 
-                                    ut ea ullam nostrum cum quisquam consequuntur amet voluptate saepe ad? Nisi, quos. Eligendi earum ea dolorum 
-                                    cum quaerat? Placeat est doloribus quibusdam vitae quos iusto architecto distinctio quae</p>
+                                    <p>I’m a passionate Web Designer with extensive knowledge in creating modern, 
+                                        responsive websites that provide seamless user experiences. 
+                                        From wireframing to coding, I focus on delivering designs that are both visually appealing and functional. 
+                                        With expertise in HTML, CSS, JavaScript, and various design tools, I’m dedicated to crafting websites 
+                                        that help brands stand out and engage their audience.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -104,8 +105,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="button padd-15">
-                                            <a href="#" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -152,12 +152,12 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2015
+                                                        <i class="fa fa-calendar"></i> 2021 - 2025
                                                     </h3>
-                                                    <h4 class="timeline-title">Master in computer</h4>
-                                                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                                    Explicabo fuga numquam esse a eum, facere, non corporis, repudiandae blanditiis atque 
-                                                    facilis voluptate sint magnam fugit illo.</p>
+                                                    <h4 class="timeline-title">BE Computer Science & Technology</h4>
+                                                    <p class="timeline-text">where I gained a strong foundation in programming, software development, 
+                                                    and problem-solving. My academic background has equipped me with the technical skills needed to excel in the digital world.
+                                                    This knowledge complements my passion for creative design, bridging the gap between technology and aesthetics.</p>
                                                 </div>
                                                 <!--timeline item-->
                                                 <div class="timeline-item">
@@ -431,39 +431,37 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!--contact form-->
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
+                    <form id="contact-form" action="#" method="POST" class="contact-form padd-15">
+                        <div class="row">
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
-                                    </div>
+                            <div class="form-item col-6 padd-15">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="form-item col-12 padd-15">
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </div>
+                        <div id="toast" class="toast" style="display: none;"></div>
+                    </form>                    
                 </div>
             </section>
             <!--contact section end-->
@@ -494,6 +492,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
     <script src="style-switcher.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>
